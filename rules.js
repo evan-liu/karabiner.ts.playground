@@ -29,10 +29,11 @@ import {
   withMapper,
 } from 'karabiner.ts'
 
-export const rules = [
+export const rules = () => [
   // rule(), layer(), simlayer(), hyperLayer(), duoLayer()
   rule('Playground').manipulators([
-    // map(), { [key]: toKey() }
-    map('⇪').to('⎋'),
+    // Docs: https://evan-liu.github.io/karabiner.ts/
+
+    map('⇪').toHyper().toIfAlone('⎋'),
   ]),
 ]
