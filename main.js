@@ -12,6 +12,11 @@ try {
   error = e?.message || e || 'Unknown error'
 }
 
-document.querySelector('#app').innerHTML = `<pre${
-  error ? ' class="error"' : ''
-}>${error || code}</pre>`
+document.querySelector('#app').innerHTML = `\
+<div>
+  <a href="https://karabiner-elements.pqrs.org/docs/json/complex-modifications-manipulator-definition/" target="_blank">
+    🔗 Karabiner Elements Manipulator Definition
+  </a>
+      
+  <pre${error ? ' class="error"' : ''}>${error || code}</pre>
+</div>`
