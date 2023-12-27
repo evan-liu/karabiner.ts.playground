@@ -11,7 +11,7 @@
     "karabiner.ts": "latest"
   },
   "devDependencies": {
-    "vite": "^4.3.2"
+    "vite": "^5.0.10"
   },
   "prettier": {
     "singleQuote": true,
